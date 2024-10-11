@@ -14,7 +14,7 @@ Is it for me?
 =============
 
 * Do you take photos with a camera without a GPS tracking feature?
-* Do you have https://moves-app.com/ installed on your phone?
+* Do you have a mobile with a GPS tracking app (ie wigle)
 * Do you want to have your photos geotagged?
 
 …if your answer is 3x yes, then this tool is for you.
@@ -38,9 +38,7 @@ How is it implemented?
 When you ask GeoTagger to tag your photos, this process takes places:
 
 1. Unique creation dates are extracted from the photo files.
-2. Your Moves history for those days is fetched from the Moves API.
-3. A `GPX <https://en.wikipedia.org/wiki/GPS_Exchange_Format>`_ file is
-   generated from the data.
+3. Create a GPX file from you GPS tracking app
 4. ``exiftool -geotag`` is used behind to scene to apply that location
    log to your photos.
 
