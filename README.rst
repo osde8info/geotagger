@@ -26,10 +26,8 @@ How does it work?
 * You already walk around with your location-aware phone and Moves
   records your location.
 * You snap photos with your GPS-less camera.
-* GeoTagger uses the creation timestamps from photos
-  to find your location at the time of taking them in your Moves log.
-* GeoTagger is able to retrospectively add GEO tags to even old photos,
-  as long as your location for the period is logged with Moves.
+* GeoTagger uses the creation timestamps from photos to find your location at the time of taking by matching times in your GPX file.
+* GeoTagger is able to retrospectively add GEO tags to even old photos as long as you have a GPX file for that period.
 
 
 How is it implemented?
@@ -110,8 +108,11 @@ Changelog
 
 0.0.3 (2017-09-09)
 ------------------
-
 * Fixed ``missing configuration: MOVES__ID`` #1
+
+2024.10.10
+------------------
+* Remove MOVEs
 
 
 Contact
@@ -123,6 +124,9 @@ Jakub Roztocil
 * https://twitter.com/jakubroztocil
 * https://roztocil.co
 
+Clive Darra
+
+* https://github.com/osde8info
 
 Contribute
 ==========
